@@ -49,7 +49,7 @@ weatherApp.controller('ForecastController', ['$scope','$resource','$routeParams'
     
     $scope.city = cityService.city;
     $scope.appid = cityService.appid;
-    $scope.days = $routeParams.days || 7;
+    $scope.days = $routeParams.days || '7';
     
     $scope.weatherAPI = $resource("http://api.openweathermap.org/data/2.5/forecast/daily");
     
